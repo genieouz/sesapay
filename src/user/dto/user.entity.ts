@@ -5,7 +5,7 @@ import { ApiProperty } from '@nestjs/swagger';
 export class User {
   @ApiProperty()
   @Field(type => ID)
-  public _id: string;
+  public id: string;
 
   @ApiProperty()
   @Field({ nullable: true })

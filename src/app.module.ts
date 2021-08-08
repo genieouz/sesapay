@@ -6,6 +6,7 @@ import { AuthModule } from '~/auth/auth.module';
 import { MultimediaModule } from './multimedia/multimedia.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { AgenceModule } from './agence/agence.module';
+import { AgentModule } from './agent/agent.module';
 
 @Module({
   imports: [
@@ -37,6 +38,7 @@ import { AgenceModule } from './agence/agence.module';
     MultimediaModule,
     UserModule,
     AgenceModule,
+    AgentModule,
   ],
 })
 export class AppModule {}
