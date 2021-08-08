@@ -1,6 +1,7 @@
 import { UserRoles } from '~/user/enums/user-roles.enum';
 import { Schema } from 'mongoose';
 import { commonSchemaOptions } from '~/commons/database/common-schema-options';
+import { agenceModelName } from '~/agence/models/namings/agence.model-name';
 
 export const agentSchema = new Schema({
   phoneNumber: {
@@ -9,7 +10,6 @@ export const agentSchema = new Schema({
   },
   email: {
     type: String,
-    required: true,
     unique: true,
   },
   firstName: {
@@ -19,5 +19,5 @@ export const agentSchema = new Schema({
     type: String,
   },
   domicile: { type: String },
-  agence: { type: String },
+  agence: { type: Schema.Types.ObjectId, ref: agenceModelName },
 }, commonSchemaOptions);
