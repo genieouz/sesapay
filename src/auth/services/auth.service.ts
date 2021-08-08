@@ -3,9 +3,7 @@ import { VALIDATION_CODE_CONFIG, TOKEN_OPTIONS } from '~/auth/auth.conf';
 import { UserService } from '~/user/services/user.service';
 import { Injectable, ForbiddenException, NotFoundException } from '@nestjs/common';
 import {
-  TWILIO_AUTH_TOKEN,
-  TWILIO_ACCOUNT_SID,
-  TWILIO_PHONE_NUMBER, SIB_V3_API_KEY,
+  SIB_V3_API_KEY,
 } from '~/commons/config/env';
 import { Twilio } from 'twilio';
 import { TokenService } from '~/auth/services/token.service';
@@ -22,12 +20,10 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 
 @Injectable()
 export class AuthService {
-  client: Twilio;
   constructor(
     private readonly userService: UserService,
     private readonly tokenService: TokenService,
   ) {
-    this.client = new Twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
   }
 
 

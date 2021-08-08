@@ -1,5 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Field, InputType } from 'type-graphql';
+import { type } from "os";
+import { UserRoles } from "~/user/enums/user-roles.enum";
 
 @InputType()
 export class RegisterInput {
@@ -26,4 +28,8 @@ export class RegisterInput {
     @ApiProperty()
     @Field()
     phoneNumber: string;
+
+    @ApiProperty({ enum: ['ADMIN', 'USER'] })
+    @Field()
+    role: string;
 }
