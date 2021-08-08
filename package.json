@@ -27,7 +27,7 @@
     "@nestjs/mongoose": "^6.1.2",
     "@nestjs/passport": "^6.1.0",
     "@nestjs/platform-express": "^6.0.0",
-    "@nestjs/swagger": "4.0.9",
+    "@nestjs/swagger": "^4.0.9",
     "apollo-server-express": "^2.9.5",
     "bcrypt": "^5.0.1",
     "class-transformer": "^0.2.3",
@@ -51,7 +51,7 @@
     "sib-api-v3-sdk": "^7.2.4",
     "sib-api-v3-typescript": "^1.2.1",
     "stripe": "^8.144.0",
-    "swagger-ui-express": "^4.1.4",
+    "swagger-ui-express": "^4.1.6",
     "twilio": "^3.42.1",
     "type-graphql": "^0.17.6"
   },

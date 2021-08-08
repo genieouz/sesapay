@@ -8,10 +8,10 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
   const options = new DocumentBuilder()
-    .setTitle('Ivoire Discount API')
-    .setDescription('The ivoire discount API description')
+    .setTitle('SESAPAY API')
+    .setDescription('The sesapay API description')
     .setVersion('2.0')
-    .addTag('IvoireDiscount')
+    .addTag('SESAPAY')
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('doc', app, document);

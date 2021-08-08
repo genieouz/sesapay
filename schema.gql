@@ -55,6 +55,8 @@ input RegisterInput {
   email: String!
   firstName: String!
   lastName: String!
+  domicile: String!
+  phoneNumber: String!
 }
 
 type Session {
