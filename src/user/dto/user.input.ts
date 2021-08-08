@@ -17,10 +17,6 @@ export class UserInput {
 
     @ApiProperty()
     @Field({ nullable: true })
-    public password: string;
-
-    @ApiProperty()
-    @Field({ nullable: true })
     public email: string;
 
     @ApiProperty()

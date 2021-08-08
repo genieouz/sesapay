@@ -84,7 +84,6 @@ input UserInput {
   phoneNumber: String
   lastName: String
   firstName: String
-  password: String
   email: String
   domicile: String
 }
